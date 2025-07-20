@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul 16 21:26:04 2025
+# Process ID         : 18708
+# Current directory  : C:/Vivado_projects/Vivado/ram_rom
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26492 C:\Vivado_projects\Vivado\ram_rom\ram_rom.xpr
+# Log file           : C:/Vivado_projects/Vivado/ram_rom/vivado.log
+# Journal file       : C:/Vivado_projects/Vivado/ram_rom\vivado.jou
+# Running On         : Jyotsna
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16802 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 17876 MB
+# Available Virtual  : 3917 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/Vivado/ram_rom/ram_rom.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/bhati/OneDrive/Desktop/Vivado/ram_rom' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.191 ; gain = 110.434
+update_compile_order -fileset sources_1
+set_property top rom_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom\ram_rom_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom\ram_rom_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom\ram_rom_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Vivado_projects\Vivado\ram_rom\ram_rom_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'rom_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'rom_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim/mem_rom.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rom_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_projects/Vivado/ram_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_ram
+INFO: [VRFC 10-311] analyzing module dual_port_ram
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_projects/Vivado/ram_rom/ram_rom_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_ram_testbench
+INFO: [VRFC 10-311] analyzing module dual_port_ram_testbench
+INFO: [VRFC 10-311] analyzing module rom_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rom_testbench_behav xil_defaultlib.rom_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rom_testbench_behav xil_defaultlib.rom_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.rom_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rom_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Vivado_projects/Vivado/ram_rom/ram_rom.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rom_testbench_behav -key {Behavioral:sim_1:Functional:rom_testbench} -tclbatch {rom_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source rom_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time	EN	ADDR	ROM_DATA
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rom_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1252.242 ; gain = 12.242
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 16 21:30:27 2025...
