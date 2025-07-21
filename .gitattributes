@@ -1,0 +1,5 @@
+*.v linguist-language=Verilog
+*.xdc linguist-language=Verilog
+*.jou linguist-generated
+*.log linguist-generated
+*.str linguist-generated
