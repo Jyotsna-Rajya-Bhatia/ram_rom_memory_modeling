@@ -1,0 +1,10 @@
+vivado_project/
+*.jou
+*.log
+*.str
+*.backup.*
+*.cache
+*.ip_user_files
+*.sim
+*.srcs
+*.xpr

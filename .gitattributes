@@ -1,12 +1,1 @@
-* linguist-language=Verilog
-
-*.jou linguist-generated
-*.log linguist-generated
-*.str linguist-generated
-*.cache/* linguist-generated
-*.Xil/* linguist-generated
-*.runs/* linguist-generated
-*.sim/* linguist-generated
-*.webtalk/* linguist-generated
-*.hw/* linguist-generated
-*.ip_user_files/* linguist-generated
+*.v linguist-language=Verilog
