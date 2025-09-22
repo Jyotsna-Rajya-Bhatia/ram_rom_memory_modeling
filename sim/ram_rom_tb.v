@@ -121,6 +121,19 @@ module dual_port_ram_testbench;
     b_data = 8'h77;
     b_write_enable = 1'b1;
     #10;
+     //same addr write
+    #10;
+    a_addr = 6'h06;
+    b_addr = 6'h06;   // both ports target addr 06
+    a_data = 8'hBB; 
+    a_write_enable = 1'b1;   // A writes BB
+    b_data = 8'hCC; 
+    b_write_enable = 1'b1;   // B writes CC
+    #10;
+    a_write_enable = 1'b0;
+    b_write_enable = 1'b0;
+    a_addr = 6'h06; b_addr = 6'h06;   // read
+
     end
     endmodule
     
