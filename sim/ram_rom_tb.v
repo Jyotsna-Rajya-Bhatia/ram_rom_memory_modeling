@@ -57,6 +57,22 @@ addr = 6'd2;
 write_enable = 1'b1;
 data = 8'h06;
 addr = 6'd1;
+
+ //writing at the same port (overwrite)
+write_enable = 1'b1;
+data = 8'hAA;
+addr = 6'd2;  //one data at 02
+#10;
+data = 8'h55;
+addr = 6'd2;   //2nd data at 02
+#10;
+write_enable = 1'b0;
+addr = 6'd2;       //this will read data at 02         
+#10;
+
+//undefined data at addr
+addr = 6'd5;                
+#10;
 end
 
 endmodule
