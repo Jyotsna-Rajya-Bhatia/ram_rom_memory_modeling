@@ -61,13 +61,13 @@ addr = 6'd1;
  //writing at the same port (overwrite)
 write_enable = 1'b1;
 data = 8'hAA;
-addr = 6'd2;  //one data at 02
+addr = 6'd3;  //one data at 03
 #10;
 data = 8'h55;
-addr = 6'd2;   //2nd data at 02
+addr = 6'd3;   //2nd data at 03
 #10;
 write_enable = 1'b0;
-addr = 6'd2;       //this will read data at 02         
+addr = 6'd3;       //this will read data at 03         
 #10;
 
 //undefined data at addr
